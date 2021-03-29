@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import BookList from './BookList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Person/>
+      <Message /> */}
+      <BookList/>
+    </>
   );
+}
+
+//implicit return when only one line needs to be returned
+const Person = () => <h3>John Doe</h3>
+
+//explicit return
+const Message = () => {
+  return <p>this is my message</p>
 }
 
 export default App;
