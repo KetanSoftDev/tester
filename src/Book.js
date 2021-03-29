@@ -1,5 +1,4 @@
-const Book = (props) => {
-const { image, title, author } = props.book
+const Book = ({ image, title, author }) => {
   return (
     <article className='book'>
       <img src={image} alt='' />
