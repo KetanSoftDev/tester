@@ -1,7 +1,4 @@
-import Book from './Book'
-import bookdata from './BookData'
-
-const books = [
+const bookdata = [
   {
     id: 1,
     image:
@@ -25,14 +22,4 @@ const books = [
   }
 ]
 
-const BookList = () => {
-  return (
-    <section className='booklist'>
-      {bookdata.map((book) => (
-        <Book key={book.id} {...book} />
-      ))}
-    </section>
-  )
-}
-
-export default BookList
+export default bookdata
