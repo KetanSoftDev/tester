@@ -1,5 +1,3 @@
-import { computeHeadingLevel } from "@testing-library/dom"
-
 const Book = ({ image, title, author }) => {
   const clickHandler = () => {
     alert('Hello world!')
